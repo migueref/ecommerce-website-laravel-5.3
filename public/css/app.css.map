@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA","file":"app.css","sourcesContent":[]}
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAEA;EACE,mBAAmB;CACpB;;AACD;EACE,cAAa;CACd;;AACD;EACE,0BAA0B;CAC3B;;AACD;EACE,aAAY;CACb;;AACD;EACE,wBAAwB;CACzB","file":"app.css","sourcesContent":["// Variables\n@import \"variables\";\n.navbar{\n  margin-bottom: 0px;\n}\n.big-padding{\n  padding:30px;\n}\n.blue-grey{\n  background-color: #263238;\n}\n.white-text{\n  color:white;\n}\n.table{\n  background-color: white;\n}\n"]}
