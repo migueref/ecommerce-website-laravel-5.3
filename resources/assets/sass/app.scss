@@ -9,9 +9,18 @@
 .blue-grey{
   background-color: #263238;
 }
+.white{
+  background-color: white;
+}
 .white-text{
   color:white;
 }
 .table{
   background-color: white;
+}
+.floating{
+  position: fixed;
+  bottom: 2em;
+  right:2em;
+  z-index: 100;
 }

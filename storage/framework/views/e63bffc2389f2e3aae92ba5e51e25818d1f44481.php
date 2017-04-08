@@ -28,7 +28,11 @@
         </tbody>
       </table>
     </div>
-
+    <div class="floating">
+      <a href="<?php echo e(url('/products/create')); ?>" class="btn btn-primary btn-fab">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
 
 <?php $__env->stopSection(); ?>
 
