@@ -22,7 +22,9 @@
               <td>{{$product->title}}</td>
               <td>{{$product->description}}</td>
               <td>{{$product->pricing}}</td>
-              <td>Actions</td>
+              <td>
+                <a href="{{url('/products/'.$product->id.'/edit')}}">Edit</a>
+              </td>
 
             </tr>
            @endforeach

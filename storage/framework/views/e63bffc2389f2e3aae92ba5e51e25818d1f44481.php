@@ -21,7 +21,9 @@
               <td><?php echo e($product->title); ?></td>
               <td><?php echo e($product->description); ?></td>
               <td><?php echo e($product->pricing); ?></td>
-              <td>Actions</td>
+              <td>
+                <a href="<?php echo e(url('/products/'.$product->id.'/edit')); ?>">Edit</a>
+              </td>
 
             </tr>
            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
