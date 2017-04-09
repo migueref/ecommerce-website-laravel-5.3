@@ -2,8 +2,20 @@
   margin-bottom: 0px;
 }
 
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
 .big-padding {
   padding: 30px;
+}
+
+.no-transform {
+  text-transform: none;
 }
 
 .blue-grey {
@@ -16,6 +28,14 @@
 
 .white-text {
   color: white;
+}
+
+.red-text {
+  color: #c83232;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .table {

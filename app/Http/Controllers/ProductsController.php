@@ -59,7 +59,8 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        //
+    
+
     }
 
     /**
@@ -103,6 +104,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Product::destroy($id);
+        return redirect('/products');
     }
 }

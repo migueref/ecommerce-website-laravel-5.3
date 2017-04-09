@@ -3,8 +3,17 @@
 .navbar{
   margin-bottom: 0px;
 }
+.no-padding{
+  padding: 0px;
+}
+.no-margin{
+  margin: 0px;
+}
 .big-padding{
   padding:30px;
+}
+.no-transform{
+  text-transform: none;
 }
 .blue-grey{
   background-color: #263238;
@@ -14,6 +23,12 @@
 }
 .white-text{
   color:white;
+}
+.red-text{
+  color:rgb(200,50,50);
+}
+.inline-block{
+    display: inline-block;
 }
 .table{
   background-color: white;

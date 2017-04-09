@@ -23,6 +23,7 @@
               <td><?php echo e($product->pricing); ?></td>
               <td>
                 <a href="<?php echo e(url('/products/'.$product->id.'/edit')); ?>">Edit</a>
+                <?php echo $__env->make('products.delete',['product'=>$product], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
               </td>
 
             </tr>
