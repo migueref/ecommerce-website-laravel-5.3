@@ -282,6 +282,7 @@ class ComposerStaticInitbd5895578338e27db537b107bb5b7391
     );
 
     public static $classMap = array (
+        'CreateInShoppingCartsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_09_181656_create_in_shopping_carts_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_26_012900_create_products_table.php',
         'CreateShoppingCartsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_09_003743_create_shopping_carts_table.php',

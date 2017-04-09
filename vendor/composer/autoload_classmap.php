@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateInShoppingCartsTable' => $baseDir . '/database/migrations/2017_04_09_181656_create_in_shopping_carts_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProductsTable' => $baseDir . '/database/migrations/2016_12_26_012900_create_products_table.php',
     'CreateShoppingCartsTable' => $baseDir . '/database/migrations/2017_04_09_003743_create_shopping_carts_table.php',
