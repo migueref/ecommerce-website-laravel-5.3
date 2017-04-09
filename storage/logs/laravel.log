@@ -660,3 +660,19 @@ Stack trace:
 #11 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(163): Illuminate\Foundation\Http\Kernel->gatherRouteMiddleware(Object(Illuminate\Http\Request))
 #12 C:\xampp\htdocs\ecommerce\public\index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
 #13 {main}  
+[2017-04-09 00:41:35] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected '}' in C:\xampp\htdocs\ecommerce\database\migrations\2017_04_09_003743_create_shopping_carts_table.php:21
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(318): Illuminate\Filesystem\Filesystem->requireOnce('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(95): Illuminate\Database\Migrations\Migrator->requireFiles(Array)
+#2 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(65): Illuminate\Database\Migrations\Migrator->run(Array, Array)
+#3 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#4 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Container\Container.php(508): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Console\Command.php(169): Illuminate\Container\Container->call(Array)
+#6 C:\xampp\htdocs\ecommerce\vendor\symfony\console\Command\Command.php(261): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Console\Command.php(155): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\ecommerce\vendor\symfony\console\Application.php(817): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\ecommerce\vendor\symfony\console\Application.php(185): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\ecommerce\vendor\symfony\console\Application.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\xampp\htdocs\ecommerce\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\xampp\htdocs\ecommerce\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 {main}  
