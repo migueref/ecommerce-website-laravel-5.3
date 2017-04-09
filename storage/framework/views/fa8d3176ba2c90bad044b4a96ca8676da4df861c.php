@@ -51,6 +51,15 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                        <li>
+                          <a href="#">
+                            Cart
+                            <span class="circle-shopping-cart">
+                              <?php echo e($shopping_cart->productsSize()); ?>
+
+                            </span>
+                          </a>
+                        </li>
                         <!-- Authentication Links -->
                         <?php if(Auth::guest()): ?>
                             <li><a href="<?php echo e(url('/login')); ?>">Login</a></li>
