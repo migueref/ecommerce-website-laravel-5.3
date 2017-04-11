@@ -22,7 +22,7 @@
 
           </p>
           <p>
-            <a href="#" class="btn btn-success"> Add to cart</a>
+            <?php echo $__env->make("in_shopping_carts.form",["product"=>$product], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           </p>
         </div>
       </div>
