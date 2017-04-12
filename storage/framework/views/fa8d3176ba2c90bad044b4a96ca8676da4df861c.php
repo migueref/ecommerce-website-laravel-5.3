@@ -52,7 +52,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                          <a href="#">
+                          <a href="<?php echo e(url('/carrito')); ?>">
                             Cart
                             <span class="circle-shopping-cart">
                               <?php echo e($shopping_cart->productsSize()); ?>

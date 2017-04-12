@@ -17,6 +17,9 @@ class ShoppingCart extends Model
     public function productsSize(){
       return $this->products()->count();
     }
+    public function total(){
+      return $this->products()->sum("pricing");
+    }
     public static function findOrCreateBySessionID($shopping_cart_id){
       if($shopping_cart_id)
         //search if exists shop cart with this id
