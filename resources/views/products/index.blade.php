@@ -23,12 +23,15 @@
               <td>{{$product->description}}</td>
               <td>{{$product->pricing}}</td>
               <td>
-                <a href="{{url('/products/'.$product->id.'/edit')}}">Edit</a>
+                <a href="{{url('/products/'.$product->id.'/edit')}}"><i class="material-icons">create</i></a>
                 @include('products.delete',['product'=>$product])
               </td>
 
             </tr>
            @endforeach
+           <tr>
+             
+           </tr>
         </tbody>
       </table>
     </div>

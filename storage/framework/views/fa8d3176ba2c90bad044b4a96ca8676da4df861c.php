@@ -86,45 +86,7 @@
         <?php echo $__env->yieldContent('content'); ?>
     </div>
 
-    <div class="navbar navbar-fixed-bottom">
-      <footer class="page-footer dark-blue white-text center-on-small-only">
-          <!--Footer Links-->
-          <div class="container-fluid">
-              <div class="row">
-
-                  <!--First column-->
-                  <div class="col-md-6">
-                    <h2>Cyberdreams</h2>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </div>
-                  <!--/.First column-->
-
-                  <!--Second column-->
-                  <div class="col-md-6">
-                      <h5 class="title">Links</h5>
-                      <ul>
-                        <li><a href="#!" class="white-text">Link 1</a></li>
-                        <li><a href="#!" class="white-text">Link 1</a></li>
-                          <li><a href="#!" class="white-text">Link 1</a></li>
-                      </ul>
-                  </div>
-                  <!--/.Second column-->
-              </div>
-          </div>
-          <!--/.Footer Links-->
-
-          <!--Copyright-->
-          <div class="footer-copyright">
-              <div class="container-fluid">
-                  © 2015 Copyright: <a href="https://www.linkedin.com/in/migueref"> Miguel Ángel Rea Flores </a>
-
-              </div>
-          </div>
-          <!--/.Copyright-->
-
-      </footer>
-    </div>
-
+    
     <!-- Scripts -->
 
     <script
