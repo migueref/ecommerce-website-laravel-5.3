@@ -29,7 +29,7 @@
             </tr>
            <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
            <tr>
-             
+
            </tr>
         </tbody>
       </table>
