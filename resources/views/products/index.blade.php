@@ -17,17 +17,20 @@
         </thead>
         <tbody>
            @foreach ($products as $product)
+
             <tr>
-              <td>{{$product->id}}</td>
-              <td>{{$product->title}}</td>
-              <td>{{$product->description}}</td>
-              <td>{{$product->pricing}}</td>
+
+              <td><a href="{{url('/products/'.$product->id)}}">{{$product->id}}</a></td>
+              <td><a href="{{url('/products/'.$product->id)}}">{{$product->title}}</a></td>
+              <td><a href="{{url('/products/'.$product->id)}}">{{$product->description}}</a></td>
+              <td><a href="{{url('/products/'.$product->id)}}">{{$product->pricing}}</a></td>
               <td>
                 <a href="{{url('/products/'.$product->id.'/edit')}}"><i class="material-icons">create</i></a>
                 @include('products.delete',['product'=>$product])
               </td>
 
             </tr>
+
            @endforeach
            <tr>
 

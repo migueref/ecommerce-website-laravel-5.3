@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\ShoppingCart;
 use App\PayPal;
+use App\Order;
 
 class PaymentsController extends Controller
 {
@@ -14,6 +15,12 @@ class PaymentsController extends Controller
       $shopping_cart = ShoppingCart::findOrCreateBySessionID($shopping_cart_id);
 
       $paypal = new PayPal($shopping_cart);
-      dd($paypal->execute($request->paymentId,$request->PayerID));
+      $response = $paypal->execute($request->paymentId,$request->PayerID);
+      if($response->state == "approved") {
+        //we can execute the payment
+        $order = Order::createFromPayPalResponse($response,$shopping_cart);
+
+      }
+      dd($order);
     }
 }

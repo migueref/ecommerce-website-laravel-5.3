@@ -6,8 +6,8 @@ class PayPal
 {
     private $_apiContext;
     private $shopping_cart;
-    private $_ClientId = '';
-    private $_ClientSecret= '';
+    private $_ClientId = 'ASmarEzfBlidnWOEdcgjgB_DivDRbqeBexwT85_vMMSDn__2SzA9Wmx7l7zdClymChFR-cS4_puoT7Pf';
+    private $_ClientSecret= 'EPygZiWSy0Q9A3U2hQVCaehFjbA4wKeFmF-SoRtUwShyoJFBfQq58Xx_if-Oz4JFTRuTgWxJ9rcsb1RH';
 
     public function __construct($shopping_cart){
       $this->_apiContext= \PaypalPayment::ApiContext($this->_ClientId, $this->_ClientSecret);
